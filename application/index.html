@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps Cloud App</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 45px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            margin-bottom: 35px;
+            color: #cbd5e1;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #16a34a;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .architecture {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.12);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .box h3 {
+            margin-bottom: 8px;
+        }
+
+        .box p {
+            color: #cbd5e1;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .architecture {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="status">
+                ● Application Running
+            </div>
+
+            <h1>🚀 DevOps Cloud Application</h1>
+
+            <p class="subtitle">
+                Successfully deployed using AWS + Terraform + Nginx
+            </p>
+
+            <div class="architecture">
+
+                <div class="box">
+                    <h3>☁️ AWS</h3>
+                    <p>Cloud Infrastructure</p>
+                </div>
+
+                <div class="box">
+                    <h3>🏗️ Terraform</h3>
+                    <p>Infrastructure as Code</p>
+                </div>
+
+                <div class="box">
+                    <h3>🌐 Nginx</h3>
+                    <p>Web Server</p>
+                </div>
+
+            </div>
+
+            <footer>
+                Environment: QA | Region: ap-south-1
+                <br><br>
+                Powered by Terraform
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
